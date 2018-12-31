@@ -103,6 +103,7 @@ canvas {
     transform: translate(-50%, -50%);
     text-align: center;
     user-select: none;
+
 }
 
 .time {
@@ -110,6 +111,7 @@ canvas {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    text-shadow: 3px 3px 2px #FF5722
 }
 
 .time span {
@@ -123,7 +125,7 @@ canvas {
 
 @media (max-width: 740px) {
     .label {
-        font-size: 1.7rem;
+        font-size: 2.5rem
     }
 
     .time span {
