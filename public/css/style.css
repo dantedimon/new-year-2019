@@ -134,4 +134,8 @@ canvas {
     .time span div {
         font-size: 2rem;
     }
+
+    .panorama {
+        background-position-x: 75%;
+    }
 }
