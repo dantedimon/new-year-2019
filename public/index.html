@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Is Coming In ...</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="panorama"></div>
+<div class="stars"></div>
+
+<div class="timer">
+    <h1 class="label">New Year Starts In</h1>
+
+    <div class="time">
+        <span style="display:none;"><div id="d">00</div>Days</span>
+        <span><div id="h">00</div>Hours</span>
+        <span><div id="m">00</div>Minutes</span>
+        <span><div id="s">00</div>Seconds</span>
+    </div>
+</div>
+
+<script src="/js/countDown.js"></script>
+<script src="/js/snow.js"></script>
+<script src="/js/snowfall.js"></script>
+
+<script>
+    let snowfall = new Snowfall();
+    let countDown = new CountDown("Jan 1, 2019 00:00:00");
+
+    countDown.start()
+
+</script>
+</body>
+</html>
