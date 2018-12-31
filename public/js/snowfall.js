@@ -24,7 +24,13 @@ class Snowfall {
     }
 
     createSnowflakes() {
-        const flakes = window.innerWidth / 2;
+        let divider = 2;
+
+        if (window.innerWidth < 600) {
+            divider = 5;
+        }
+
+        const flakes = window.innerWidth / divider;
 
         this.snowflakes = [];
 
